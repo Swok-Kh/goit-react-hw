@@ -1,0 +1,14 @@
+@import '../../scss/variables';
+
+.wrapper {
+  width: 300px;
+  margin: 0 auto;
+  background-color: $secondary-bgc;
+  border: 2px solid $third-bgc;
+  border-radius: 10px;
+  padding: 10px;
+  @media screen and (min-width: $tablet) {
+    width: 400px;
+    padding: 20px;
+  }
+}

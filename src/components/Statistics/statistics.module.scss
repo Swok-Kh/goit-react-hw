@@ -1,0 +1,10 @@
+.list {
+  list-style: none;
+  & li {
+    line-height: 2em;
+  }
+}
+.value {
+  font-style: italic;
+  font-weight: 700;
+}

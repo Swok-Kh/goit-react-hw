@@ -1,0 +1,51 @@
+@import '../../scss/variables';
+.wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+%button {
+  border-radius: 5px;
+  padding: 5px;
+  transition: color $transition-opt, background-color $transition-opt;
+  cursor: pointer;
+  outline: none;
+  &:hover,
+  &:focus {
+    color: $light-color;
+  }
+  &:not(:last-child) {
+    margin-right: 10px;
+    @media screen and (min-width: $tablet) {
+      margin-right: 20px;
+    }
+  }
+}
+.good {
+  @extend %button;
+  background-color: #5efc82;
+  border: 1px solid #009624;
+  &:hover,
+  &:focus {
+    background-color: #009624;
+  }
+}
+.neutral {
+  @extend %button;
+  background-color: #c1d5e0;
+  border: 1px solid #62757f;
+  &:hover,
+  &:focus {
+    background-color: #62757f;
+  }
+}
+.bad {
+  @extend %button;
+  background-color: #ffd0b0;
+  border: 1px solid #c96f53;
+  &:hover,
+  &:focus {
+    background-color: #c96f53;
+  }
+}

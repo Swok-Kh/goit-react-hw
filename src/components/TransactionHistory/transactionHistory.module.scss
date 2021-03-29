@@ -1,0 +1,34 @@
+@import '../../scss/variables';
+.table {
+  @extend %card;
+  border-collapse: collapse;
+  width: 90%;
+  @media screen and (min-width: $tablet) {
+    width: 50%;
+  }
+}
+.title {
+  @extend %large-font;
+  background-color: $dark-bgc;
+  color: $light-bgc;
+}
+.lightRightBorder {
+  border-right: 1px solid $light-bgc;
+}
+.darkRightBorder {
+  border-right: 1px solid $dark-bgc;
+}
+.row:nth-child(2n + 1) {
+  background-color: $light-bgc;
+}
+.row:nth-child(2n + 2) {
+  background-color: $primary-bgc;
+}
+.row {
+  cursor: pointer;
+  transition: background-color $transition-style, color $transition-style;
+  &:hover {
+    background-color: $accent-bgc;
+    color: $light-bgc;
+  }
+}

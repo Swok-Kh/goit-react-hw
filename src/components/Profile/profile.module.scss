@@ -1,0 +1,57 @@
+@import '../../scss/variables';
+.card {
+  @extend %card;
+}
+.description {
+  padding: 20px 0;
+  background-color: $light-bgc;
+}
+.avatar {
+  margin: 0 auto;
+  display: block;
+  width: 50%;
+  height: auto;
+  border-radius: 50%;
+  border: 1px solid $dark-bgc;
+}
+.name {
+  @extend %padding;
+  @extend %large-font;
+  font-weight: 700;
+}
+.tag {
+  @extend %padding;
+  @extend %light-font-color;
+  @extend %small-font;
+}
+.location {
+  @extend %light-font-color;
+  @extend %padding;
+}
+.stats {
+  display: flex;
+  background-color: $primary-bgc;
+}
+.statsItem {
+  display: flex;
+  flex-direction: column;
+  border-top: 1px solid $dark-bgc;
+  cursor: pointer;
+  transition: background-color $transition-style, color $transition-style;
+  &:not(:last-child) {
+    border-right: 1px solid $dark-bgc;
+  }
+  &:hover {
+    background-color: $accent-bgc;
+    color: $light-bgc;
+  }
+}
+.statsLabel {
+  @extend %light-font-color;
+  @extend %padding;
+  @extend %small-font;
+}
+.statsQuantity {
+  @extend %padding;
+  font-weight: 700;
+}

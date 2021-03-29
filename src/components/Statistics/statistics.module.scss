@@ -1,0 +1,33 @@
+@import '../../scss/variables';
+.card {
+  @extend %card;
+}
+.title {
+  @extend %large-font;
+  background-color: $light-bgc;
+  padding: 20px 0;
+}
+.list {
+  display: flex;
+  justify-content: center;
+  background-color: $dark-bgc;
+}
+.listItem {
+  display: flex;
+  flex-direction: column;
+  opacity: 0.7;
+  cursor: pointer;
+  transition: opacity $transition-style;
+  &:hover {
+    opacity: 1;
+  }
+}
+.listLabel,
+.listPercentage {
+  @extend %padding;
+  @extend %small-font;
+  color: $light-bgc;
+}
+.listPercentage {
+  font-weight: 700;
+}

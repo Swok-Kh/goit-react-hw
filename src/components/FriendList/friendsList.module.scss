@@ -1,0 +1,53 @@
+@import '../../scss/variables';
+
+.card {
+  @extend %card;
+  background-color: $light-bgc;
+}
+.item {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color $transition-style, color $transition-style;
+
+  &:not(:last-child) {
+    border-bottom: 1px solid $dark-bgc;
+  }
+  &:hover {
+    background-color: $accent-bgc;
+    color: $light-bgc;
+    & .statusOnline,
+    & .statusOffline {
+      transform: scale(2) rotate(135deg);
+    }
+    & .avatar {
+      transform: scale(1.2);
+    }
+  }
+}
+%status {
+  width: 10px;
+  height: 10px;
+  border-radius: 3px;
+  margin-right: 20px;
+  transition: transform $transition-style;
+}
+.statusOnline {
+  @extend %status;
+  background-color: #b2ff59;
+}
+.statusOffline {
+  @extend %status;
+  background-color: #ff5252;
+}
+.avatar {
+  background-color: $primary-bgc;
+  border-radius: 10px;
+  margin-right: 20px;
+  transition: transform $transition-style;
+}
+.name {
+  @extend %large-font;
+  font-weight: 700;
+}

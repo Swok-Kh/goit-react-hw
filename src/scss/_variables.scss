@@ -1,0 +1,44 @@
+$main-bgc: #cfd8dc;
+$secondary-bgc: #b0bec5;
+$third-bgc: #808e95;
+
+$accent-colod: #009624;
+$light-color: #fff;
+
+$tablet: 768px;
+$desktop: 1280px;
+
+$transition-opt: 250ms cubic-bezier(0.17, 0.67, 0.83, 0.67);
+
+%input {
+  width: 90%;
+  margin: 0 auto 10px;
+  background-color: $main-bgc;
+  padding: 5px;
+  outline: none;
+  border: 1px solid $third-bgc;
+  border-radius: 5px;
+  transition: border-color $transition-opt;
+  &:focus,
+  &:hover {
+    border-color: $accent-colod;
+  }
+}
+%label {
+  margin-left: 5%;
+  margin-bottom: 10px;
+}
+%button {
+  background-color: $third-bgc;
+  border: 1px solid transparent;
+  color: $light-color;
+  padding: 5px;
+  border-radius: 5px;
+  outline: none;
+  transition: background-color $transition-opt;
+  cursor: pointer;
+  &:focus,
+  &:hover {
+    background-color: $accent-colod;
+  }
+}

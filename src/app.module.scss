@@ -1,0 +1,17 @@
+@import './scss/variables';
+
+.card {
+  width: 90%;
+  margin: 0 auto;
+  padding: 5px;
+  background-color: $secondary-bgc;
+  border: 1px solid $third-bgc;
+  border-radius: 5px;
+  @media screen and (min-width: $tablet) {
+    width: 760px;
+  }
+}
+.title {
+  text-align: center;
+  margin: 10px;
+}

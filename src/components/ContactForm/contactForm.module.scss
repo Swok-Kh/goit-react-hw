@@ -1,0 +1,15 @@
+@import '../../scss/variables';
+
+.wrapper {
+  @extend %wrapper;
+}
+.input {
+  @extend %input;
+  margin-bottom: 10px;
+}
+.label {
+  @extend %label;
+}
+.button {
+  width: 100%;
+}

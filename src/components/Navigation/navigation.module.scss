@@ -1,0 +1,36 @@
+@import '../../scss/variables';
+.container {
+  @extend %container;
+}
+.block {
+  background-color: $third-bgc;
+}
+.link {
+  &::after {
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    content: '';
+    width: 100%;
+    border-bottom: 6px solid;
+    border-bottom-color: transparent;
+  }
+  position: relative;
+  padding-left: 10px;
+  padding-right: 10px;
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  transition: color $transition-opt, border-bottom-color $transition-opt;
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+}
+.active {
+  &::after {
+    border-bottom-color: $accent-color;
+  }
+}

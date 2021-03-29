@@ -1,0 +1,7 @@
+@import '../../scss/variables';
+.container {
+  @extend %container;
+}
+.title {
+  margin-bottom: 20px;
+}

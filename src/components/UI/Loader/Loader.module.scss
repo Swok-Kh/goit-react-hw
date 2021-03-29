@@ -1,0 +1,83 @@
+@import '../../../scss/variables';
+%loader {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.builtIn {
+  @extend %loader;
+  position: absolute;
+  height: 100%;
+  top: 0;
+  left: 0;
+  color: $backdrop-bgc;
+  .circle {
+    width: 5px;
+    height: 10px;
+  }
+}
+.inline {
+  @extend %loader;
+  position: relative;
+  margin-top: 40px;
+  color: $third-bgc;
+}
+.fixed {
+  @extend %loader;
+  position: fixed;
+  top: 40px;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  color: $accent-color;
+  & .item {
+    width: 40px;
+    height: 120px;
+  }
+  .circle {
+    width: 20px;
+    height: 20px;
+  }
+}
+@keyframes jumping {
+  from {
+    transform: rotate(0);
+  }
+  50% {
+    // color: $accent-color;
+    transform: rotate(180deg) scale(1.4);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.item {
+  position: absolute;
+  width: 10px;
+  height: 60px;
+  animation-name: jumping;
+  animation-duration: 800ms;
+  animation-timing-function: $timing-function;
+  animation-iteration-count: infinite;
+
+  &:nth-child(2) {
+    animation-delay: 100ms;
+  }
+  &:nth-child(3) {
+    animation-delay: 200ms;
+  }
+  &:nth-child(4) {
+    animation-delay: 300ms;
+  }
+  &:nth-child(5) {
+    animation-delay: 400ms;
+  }
+}
+.circle {
+  background-color: currentColor;
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+}

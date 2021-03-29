@@ -1,0 +1,14 @@
+@import '../../scss/variables';
+.container {
+  @extend %container;
+}
+.form {
+  margin-bottom: 20px;
+}
+.input {
+  @extend %input;
+  margin-right: 10px;
+}
+.button {
+  @extend %button;
+}

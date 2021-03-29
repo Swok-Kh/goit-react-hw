@@ -1,0 +1,14 @@
+@import '../../scss/variables';
+
+.wrapper {
+  @media screen and (min-width: $tablet) {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-gap: 5px;
+  }
+  @media screen and (min-width: $desktop) {
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    grid-gap: 10px;
+  }
+}

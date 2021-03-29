@@ -1,0 +1,47 @@
+@import '../../scss/variables';
+.wrapper {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 10px;
+  @media screen and (min-width: $tablet) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+.image {
+  @media screen and (min-width: $tablet) {
+    width: 30%;
+  }
+}
+.description {
+  @media screen and (min-width: $tablet) {
+    width: 60%;
+  }
+}
+.main_title {
+  margin-bottom: 20px;
+  font-style: italic;
+  font-size: 24px;
+}
+.title {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.score {
+  margin-bottom: 10px;
+  font-style: italic;
+}
+.overview {
+  margin-bottom: 10px;
+}
+.ganres {
+  display: flex;
+  list-style: none;
+  & li {
+    &:not(:last-child) {
+      margin-right: 10px;
+    }
+  }
+}

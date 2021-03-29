@@ -1,0 +1,12 @@
+@import '../../scss/variables';
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+}
+.input {
+  @extend %input;
+}
+.label {
+  @extend %label;
+}

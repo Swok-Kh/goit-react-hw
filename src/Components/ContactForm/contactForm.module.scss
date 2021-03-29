@@ -1,0 +1,22 @@
+@import '../../scss/variables';
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.input {
+  @extend %input;
+}
+.label {
+  @extend %label;
+}
+.button {
+  @extend %button;
+  width: 90%;
+  margin: 0 auto;
+
+  @media screen and (min-width: $tablet) {
+    width: 50%;
+  }
+}

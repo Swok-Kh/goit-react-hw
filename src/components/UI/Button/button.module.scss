@@ -1,0 +1,12 @@
+@import '../../../scss/variables';
+.main {
+  @extend %button;
+}
+.secondary {
+  @extend %button;
+  background-color: $error-color;
+  &:focus,
+  &:hover {
+    background-color: $accent-error;
+  }
+}

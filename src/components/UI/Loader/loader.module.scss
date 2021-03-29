@@ -1,0 +1,18 @@
+@import '../../../scss/variables';
+
+.wrapper {
+  color: $elements-bgc;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.spinner {
+  animation: rotate 2s infinite $timing-func;
+}

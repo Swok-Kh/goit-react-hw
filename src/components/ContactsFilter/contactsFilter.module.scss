@@ -1,0 +1,11 @@
+@import '../../scss/variables';
+
+.wrapper {
+  @extend %wrapper;
+}
+.input {
+  @extend %input;
+}
+.label {
+  @extend %label;
+}

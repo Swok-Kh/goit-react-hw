@@ -1,0 +1,19 @@
+{
+  "contacts": [
+    {
+      "name": "Li Chan",
+      "number": "+82695566656",
+      "id": 1
+    },
+    {
+      "name": "John Pirs",
+      "number": "+12909213212",
+      "id": 2
+    },
+    {
+      "name": "Anna Ivanko",
+      "number": "+380665559988",
+      "id": 3
+    }
+  ]
+}

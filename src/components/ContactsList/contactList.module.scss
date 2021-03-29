@@ -1,0 +1,16 @@
+@import '../../scss/variables';
+
+.wrapper {
+  list-style: none;
+}
+.item {
+  @extend %wrapper;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: baseline;
+  font-style: italic;
+  font-size: 18px;
+  &:not(:last-child) {
+    margin-bottom: 10px;
+  }
+}

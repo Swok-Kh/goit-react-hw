@@ -1,0 +1,9 @@
+@import '../../../scss/variables';
+.main {
+  @extend %title;
+  font-size: 28px;
+}
+.secondary {
+  @extend %title;
+  font-size: 22px;
+}

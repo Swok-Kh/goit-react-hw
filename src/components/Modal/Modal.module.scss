@@ -1,0 +1,25 @@
+@import '../../scss/variables';
+
+.overlay {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background-color: $backdrop-bgc;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @media screen and (min-width: $tablet) {
+    padding: 20px;
+  }
+  @media screen and (min-width: $desktop) {
+    padding: 40px;
+  }
+}
+.item {
+  box-shadow: $shadow;
+  max-height: 90vh;
+  object-fit: contain;
+}

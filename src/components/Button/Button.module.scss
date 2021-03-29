@@ -1,0 +1,10 @@
+@import '../../scss/variables';
+
+.load {
+  @extend %button;
+  display: block;
+  margin: 20px auto 0;
+  font-weight: 700;
+  box-shadow: $shadow;
+  cursor: pointer;
+}

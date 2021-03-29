@@ -1,0 +1,45 @@
+@import '../../scss/variables';
+.wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  background-color: $secondary-bgc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: $shadow;
+}
+.form {
+  width: 90%;
+  border-radius: 2px;
+  padding: 4px;
+  background-color: $light-color;
+  display: flex;
+  align-items: center;
+  box-shadow: $shadow;
+  color: $backdrop-bgc;
+  @media screen and (min-width: $tablet) {
+    width: 50%;
+  }
+}
+.button {
+  background-color: transparent;
+  outline: none;
+  border-color: transparent;
+  text-align: center;
+  width: 10%;
+  color: inherit;
+  transition: color $transition-opt;
+  cursor: pointer;
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+}
+.input {
+  @extend %input;
+  border-color: transparent;
+  outline: none;
+}

@@ -1,0 +1,1 @@
+export { default, titleTypesMap } from './Title'; 

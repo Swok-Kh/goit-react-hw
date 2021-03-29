@@ -1,0 +1,1 @@
+export { default, iconsMap } from './SvgIcon';

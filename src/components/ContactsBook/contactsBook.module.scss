@@ -1,0 +1,16 @@
+@import '../../scss/variables';
+
+.card {
+  position: relative;
+  width: 90%;
+  margin: 0 auto;
+  padding-top: 40px;
+  @media screen and (min-width: $tablet) {
+    width: 760px;
+  }
+}
+.title {
+  position: absolute;
+  top: 0;
+  left: 20px;
+}
